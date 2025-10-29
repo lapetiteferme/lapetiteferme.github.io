@@ -1,3 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Petite Ferme - Étienne Marteau</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      background: #faf9f5;
+      color: #333;
+    }
+
+    header {
+      background: #f1e4c3;
+      text-align: center;
+      padding: 1em;
+    }
+
+    header img.logo {
+      max-width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      margin: 0.3em 0;
+      font-size: 2em;
+      color: #3a3a3a;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.3em;
+      color: #4a4a4a;
+    }
+
+    .produit {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 1em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border-radius: 5px;
+    }
+
+    .produit img {
+      max-width: 200px;
+      height: auto;
+      margin-right: 1em;
+      border-radius: 5px;
+    }
+
+    .produit div {
+      flex: 1;
+    }
+
+    ul {
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #f1e4c3;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 700px) {
+      .produit {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .produit img {
+        margin: 0 0 1em 0;
+        max-width: 100%;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.3em 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.jpg" alt="Logo de la Petite Ferme" class="logo">
+  <h1>La Petite Ferme</h1>
+  <p>Étienne Marteau – Amanlis (35)</p>
+  <nav>
+    <a href="#presentation">Mon parcours</a>
+    <a href="#produits">Produits</a>
+    <a href="#ventes">Où me trouver</a>
+    <a href="#commande">Commander</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="presentation">
+  <h2>Mon parcours & mon éthique</h2>
+  <p>
+    Paysan, je suis installé sur Amanlis. Après quelques années à travailler comme couvreur sur des monuments historiques, 
+    j'ai eu envie de revoir la terre de plus près.  
+  </p>
+  <p>
+    Je produis des œufs bio frais, issus d'un petit élevage nomade en plein air.  
+    Je produis également du miel et je fabrique différents produits issus de mes ruches : nougat, pâtes à tartiner, moutardes au miel, pain d'épices et bougies.  
+    Ces fabrications artisanales sont confectionnées par mes soins à partir de produits rigoureusement sélectionnés.
+  </p>
+  <p>
+    Quelques moutons entretiennent les prairies, et je propose à la saison de la viande d'agneau bio sur commande.  
+    Je retrouve la noblesse de la nature dans le sol que je cultive, dans le travail des abeilles, dans le pâturage des moutons.
+  </p>
+  <p>
+    Mon éthique m’a poussé à créer ma <strong>Petite Ferme</strong>, riche de diversité et à taille d’autrefois.  
+    Je crois en une <strong>paysannerie vertueuse</strong>, respectueuse de la terre, des bêtes et des hommes.
+  </p>
+</section>
+
 <section id="produits">
   <h2>Mes produits</h2>
 
@@ -27,16 +166,4 @@
     </div>
   </div>
 
-  <!-- Catégorie 3 : Les douceurs maison -->
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Nougat pistaches, noisettes, amandes">
-    <div>
-      <h3>Les douceurs maison</h3>
-      <p>Nougat – pistaches, noisettes, amandes</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Caramel">
-    <div>
-      <h3>Les douceurs
+  <!-- Catégorie 3
