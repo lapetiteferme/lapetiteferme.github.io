@@ -50,26 +50,30 @@
       color: #4a4a4a;
     }
 
-    .produit {
+    .produit-categorie {
+      display: flex;
       background: #fff;
       border: 1px solid #ddd;
+      border-radius: 8px;
       padding: 1em;
       margin-bottom: 1em;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      border-radius: 5px;
+      align-items: flex-start;
     }
 
-    .produit img {
+    .categorie-img {
       max-width: 200px;
-      height: auto;
       margin-right: 1em;
       border-radius: 5px;
     }
 
-    .produit div {
-      flex: 1;
+    .categorie-info h3 {
+      margin-top: 0;
+    }
+
+    .categorie-info ul {
+      padding-left: 1em;
+      margin: 0;
+      line-height: 1.5;
     }
 
     ul {
@@ -84,12 +88,12 @@
     }
 
     @media (max-width: 700px) {
-      .produit {
+      .produit-categorie {
         flex-direction: column;
         text-align: center;
       }
 
-      .produit img {
+      .categorie-img {
         margin: 0 0 1em 0;
         max-width: 100%;
       }
@@ -141,114 +145,66 @@
   <h2>Mes produits</h2>
 
   <!-- Catégorie 1 : Les œufs de la ferme -->
-  <div class="produit">
-    <img src="images/poulailler.jpg" alt="Œufs bio plein air">
-    <div>
+  <div class="produit-categorie">
+    <img src="images/oeufs.jpg" alt="Œufs bio" class="categorie-img">
+    <div class="categorie-info">
       <h3>Les œufs de la ferme</h3>
-      <p>Œufs bio – ponte de la semaine</p>
+      <ul>
+        <li>Œufs bio</li>
+        <li>Ponte de la semaine</li>
+      </ul>
     </div>
   </div>
 
   <!-- Catégorie 2 : Les miels -->
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Miel de printemps">
-    <div>
+  <div class="produit-categorie">
+    <img src="images/miel.jpg" alt="Miels" class="categorie-img">
+    <div class="categorie-info">
       <h3>Les miels</h3>
-      <p>Miel de printemps</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Miel d'été">
-    <div>
-      <h3>Les miels</h3>
-      <p>Miel d'été</p>
+      <ul>
+        <li>Miel de printemps</li>
+        <li>Miel d'été</li>
+      </ul>
     </div>
   </div>
 
   <!-- Catégorie 3 : Les douceurs maison -->
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Nougat pistaches, noisettes, amandes">
-    <div>
+  <div class="produit-categorie">
+    <img src="images/douceurs.jpg" alt="Douceurs maison" class="categorie-img">
+    <div class="categorie-info">
       <h3>Les douceurs maison</h3>
-      <p>Nougat – pistaches, noisettes, amandes</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Caramel">
-    <div>
-      <h3>Les douceurs maison</h3>
-      <p>Caramel</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Pâte à tartiner miel-noisettes">
-    <div>
-      <h3>Les douceurs maison</h3>
-      <p>Pâte à tartiner miel-noisettes</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Pain d'épices">
-    <div>
-      <h3>Les douceurs maison</h3>
-      <p>Pain d'épices</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Moutarde miel-curry">
-    <div>
-      <h3>Les douceurs maison</h3>
-      <p>Moutarde miel-curry</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Moutarde miel-piment d'Espelette">
-    <div>
-      <h3>Les douceurs maison</h3>
-      <p>Moutarde miel-piment d’Espelette</p>
+      <ul>
+        <li>Nougat – pistaches, noisettes, amandes</li>
+        <li>Caramel</li>
+        <li>Pâte à tartiner miel-noisettes</li>
+        <li>Pain d'épices</li>
+        <li>Moutarde miel-curry</li>
+        <li>Moutarde miel-piment d’Espelette</li>
+      </ul>
     </div>
   </div>
 
   <!-- Catégorie 4 : Bien-être et artisanat -->
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Bougie origami à la cire d'abeille">
-    <div>
-      <h3>Bien-être et artisanat – Bougies</h3>
-      <p>Bougie origami à la cire d’abeille</p>
-      <p>Bougie sphère à la cire d’abeille</p>
-      <p>Bougie torsadée à la cire d’abeille</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/ruche.jpg" alt="Coffrets cadeau">
-    <div>
-      <h3>Bien-être et artisanat – Coffrets cadeau</h3>
-      <p>Coffret essentiel</p>
-      <p>Coffret gourmet</p>
+  <div class="produit-categorie">
+    <img src="images/bienetre.jpg" alt="Bien-être et artisanat" class="categorie-img">
+    <div class="categorie-info">
+      <h3>Bien-être et artisanat</h3>
+      <ul>
+        <li><strong>Bougies :</strong> Bougie origami, Bougie sphère, Bougie torsadée</li>
+        <li><strong>Coffrets cadeau :</strong> Coffret essentiel, Coffret gourmet</li>
+      </ul>
     </div>
   </div>
 
   <!-- Catégorie 5 : Viandes de la ferme -->
-  <div class="produit">
-    <img src="images/prairie.jpg" alt="Poulet fermier bio">
-    <div>
+  <div class="produit-categorie">
+    <img src="images/viandes.jpg" alt="Viandes de la ferme" class="categorie-img">
+    <div class="categorie-info">
       <h3>Viandes de la ferme (selon saison)</h3>
-      <p>Poulet fermier bio</p>
-    </div>
-  </div>
-
-  <div class="produit">
-    <img src="images/prairie.jpg" alt="Agneau bio">
-    <div>
-      <h3>Viandes de la ferme (selon saison)</h3>
-      <p>Agneau bio élevé sous la mère</p>
+      <ul>
+        <li>Poulet fermier bio</li>
+        <li>Agneau bio élevé sous la mère</li>
+      </ul>
     </div>
   </div>
 
@@ -265,18 +221,21 @@
 
 <section id="commande">
   <h2>Commander</h2>
-  <p>Les commandes sont possibles par e-mail, avec retrait le vendredi soir au marché ou à la ferme sur rendez-vous.</p>
+  <p>Les commandes sont possibles par e-mail, avec retrait le vendredi soir au marché de la Chevrerie d’Amanlis.</p>
+  <p><strong>Email :</strong> <a href="mailto:Etiennefesneau@gmail.com">Etiennefesneau@gmail.com</a></p>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email : contact@lapetiteferme.fr</p>
-  <p>Téléphone : 06 00 00 00 00</p>
-  <p>Adresse : Amanlis (35)</p>
+  <p><strong>Étienne Marteau</strong><br>
+  La Petite Ferme<br>
+  1 La Vieille Audière<br>
+  35150 Amanlis<br>
+  <strong>Email :</strong> <a href="mailto:Etiennefesneau@gmail.com">Etiennefesneau@gmail.com</a></p>
 </section>
 
 <footer>
-  &copy; 2025 La Petite Ferme – Tous droits réservés
+  <p>© 2025 La Petite Ferme – Étienne Marteau | Site fait maison 🌻</p>
 </footer>
 
 </body>
