@@ -19,7 +19,7 @@
     }
 
     header img.logo {
-      max-width: 199px;
+      max-width: 300px;
       display: block;
       margin: 0 auto 10px;
     }
@@ -49,6 +49,11 @@
       color: #4a4a4a;
     }
 
+    .produit-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(calc(450px - 1rem), 1fr));
+    }
     .produit-categorie {
       display: flex;
       background: #fff;
@@ -144,66 +149,68 @@
 <section id="produits">
   <h2>Mes produits</h2>
 
-  <!-- Catégorie 1 : Les œufs de la ferme -->
-  <div class="produit-categorie">
-    <img src="assets/images/oeufs.jpg" alt="Œufs" class="categorie-img">
-    <div class="categorie-info">
-      <h3>Les œufs de la ferme</h3>
-      <ul>
-        <li>Oeufs bio, ponte de la semaine des poules élevées en plein air</li>
-      </ul>
+  <div class="produit-grid">
+    <!-- Catégorie 1 : Les œufs de la ferme -->
+    <div class="produit-categorie">
+      <img src="assets/images/oeufs.jpg" alt="Œufs" class="categorie-img">
+      <div class="categorie-info">
+        <h3>Les œufs de la ferme</h3>
+        <ul>
+          <li>Oeufs bio, ponte de la semaine des poules élevées en plein air</li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-  <!-- Catégorie 2 : Les miels -->
-  <div class="produit-categorie">
-    <img src="assets/images/miel.jpg" alt="Miels" class="categorie-img">
-    <div class="categorie-info">
-      <h3>Les miels</h3>
-      <ul>
-        <li>Miel de printemps</li>
-        <li>Miel d'été</li>
-      </ul>
+  
+    <!-- Catégorie 2 : Les miels -->
+    <div class="produit-categorie">
+      <img src="assets/images/miel.jpg" alt="Miels" class="categorie-img">
+      <div class="categorie-info">
+        <h3>Les miels</h3>
+        <ul>
+          <li>Miel de printemps</li>
+          <li>Miel d'été</li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-  <!-- Catégorie 3 : Les douceurs maison -->
-  <div class="produit-categorie">
-    <img src="assets/images/douceurs.jpg" alt="Douceurs" class="categorie-img">
-    <div class="categorie-info">
-      <h3>Les douceurs maison</h3>
-      <ul>
-        <li>Nougat</li>
-        <li>Caramel au miel</li>
-        <li>Pâte à tartiner miel-noisettes</li>
-        <li>Pain d'épices</li>
-        <li>Moutarde miel-curry</li>
-        <li>Moutarde miel-piment d’Espelette</li>
-      </ul>
+  
+    <!-- Catégorie 3 : Les douceurs maison -->
+    <div class="produit-categorie">
+      <img src="assets/images/douceurs.jpg" alt="Douceurs" class="categorie-img">
+      <div class="categorie-info">
+        <h3>Les douceurs maison</h3>
+        <ul>
+          <li>Nougat</li>
+          <li>Caramel au miel</li>
+          <li>Pâte à tartiner miel-noisettes</li>
+          <li>Pain d'épices</li>
+          <li>Moutarde miel-curry</li>
+          <li>Moutarde miel-piment d’Espelette</li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-  <!-- Catégorie 4 : Bien-être et artisanat -->
-  <div class="produit-categorie">
-    <img src="assets/images/bienetre.jpg" alt="Bien-être" class="categorie-img">
-    <div class="categorie-info">
-      <h3>Bien-être et artisanat</h3>
-      <ul>
-        <li>Bougies à la cire d'abeille</li>
-        <li>Coffrets cadeau : 
-          Coffret douceur, Coffret gourmet</li>
-      </ul>
+  
+    <!-- Catégorie 4 : Bien-être et artisanat -->
+    <div class="produit-categorie">
+      <img src="assets/images/bienetre.jpg" alt="Bien-être" class="categorie-img">
+      <div class="categorie-info">
+        <h3>Bien-être et artisanat</h3>
+        <ul>
+          <li>Bougies à la cire d'abeille</li>
+          <li>Coffrets cadeau : 
+            Coffret douceur, Coffret gourmet</li>
+        </ul>
+      </div>
     </div>
-  </div>
-
-  <!-- Catégorie 5 : Viandes de la ferme -->
-  <div class="produit-categorie">
-    <div class="categorie-info">
-      <h3>Viandes de la ferme (selon saison)</h3>
-      <ul>
-        <li>Poule fermière bio</li>
-        <li>Agneau bio élevé sous la mère</li>
-      </ul>
+  
+    <!-- Catégorie 5 : Viandes de la ferme -->
+    <div class="produit-categorie">
+      <div class="categorie-info">
+        <h3>Viandes de la ferme (selon saison)</h3>
+        <ul>
+          <li>Poule fermière bio</li>
+          <li>Agneau bio élevé sous la mère</li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -249,6 +256,7 @@
 
 </body>
 </html>
+
 
 
 
