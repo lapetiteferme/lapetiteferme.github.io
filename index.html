@@ -12,48 +12,41 @@
       background: #faf9f5;
       color: #333;
     }
-
     header {
       background: #f1e4c3;
       text-align: center;
       padding: 1em;
     }
-
     header img.logo {
       max-width: 300px;
       display: block;
       margin: 0 auto 10px;
     }
-
     header h1 {
       margin: 0.3em 0;
       font-size: 2em;
       color: #3a3a3a;
     }
-
     nav a {
       margin: 0 10px;
       text-decoration: none;
       color: #333;
       font-weight: bold;
     }
-
     section {
       padding: 1.5em;
       max-width: 900px;
       margin: auto;
     }
-
     h2 {
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.3em;
       color: #4a4a4a;
     }
-
     .produit-grid {
       display: grid;
       gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(calc(450px - 1rem), 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(calc(450px - 1rem), 100%), 1fr));
     }
     .produit-categorie {
       display: flex;
@@ -64,27 +57,22 @@
       margin-bottom: 1em;
       align-items: flex-start;
     }
-
     .categorie-img {
       max-width: 200px;
       margin-right: 1em;
       border-radius: 5px;
     }
-
     .categorie-info h3 {
       margin-top: 0;
     }
-
     .categorie-info ul {
       padding-left: 1em;
       margin: 0;
       line-height: 1.5;
     }
-
     ul {
       line-height: 1.6;
     }
-
     footer {
       background: #f1e4c3;
       text-align: center;
@@ -93,16 +81,6 @@
     }
 
     @media (max-width: 700px) {
-      .produit-categorie {
-        flex-direction: column;
-        text-align: center;
-      }
-
-      .categorie-img {
-        margin: 0 0 1em 0;
-        max-width: 100%;
-      }
-
       nav a {
         display: block;
         margin: 0.3em 0;
@@ -269,6 +247,7 @@
 
 </body>
 </html>
+
 
 
 
