@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>La Petite Ferme | Étienne Marteau</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
     body {
       font-family: "Arial", sans-serif;
@@ -108,6 +109,12 @@
       }
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+  });
+</script>f
 </head>
 <body>
 
@@ -152,7 +159,13 @@
   <div class="produit-grid">
     <!-- Catégorie 1 : Les œufs de la ferme -->
     <div class="produit-categorie">
-      <img src="assets/images/oeufs.jpg" alt="Œufs" class="categorie-img">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="assets/images/oeufs.jpg" alt="Œufs" class="categorie-img"></div>
+          <div class="swiper-slide"><img src="assets/images/miel.jpg" alt="Œufs" class="categorie-img"></div>
+          <div class="swiper-slide"><img src="assets/images/douceurs.jpg" alt="Œufs" class="categorie-img"></div>
+        </div>
+      </div
       <div class="categorie-info">
         <h3>Les œufs de la ferme</h3>
         <ul>
@@ -256,6 +269,7 @@
 
 </body>
 </html>
+
 
 
 
