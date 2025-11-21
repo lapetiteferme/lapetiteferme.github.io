@@ -89,15 +89,17 @@
   </style>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    console.log('up')
-    const swiper = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      }
-    });
-    console.log(swiper)
+    window.onload = function() {
+      console.log('up')
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+      });
+      console.log(swiper)
+    }
 </script>f
 </head>
 <body>
@@ -253,6 +255,7 @@
 
 </body>
 </html>
+
 
 
 
