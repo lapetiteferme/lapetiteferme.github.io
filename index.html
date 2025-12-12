@@ -7,7 +7,316 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/fonts/fonts.css" />
   <style>
+    body {<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La Petite Ferme | Étienne Marteau.</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/fonts/fonts.css" />
+  <style>
     body {
+      font-family: "Poppins", "Arial", sans-serif;
+      margin: 0;
+      background: #faf9f5;
+      color: #333;
+    }
+    header {
+      background: #f2e6c4;
+      text-align: center;
+      padding: 1em;
+      border-bottom: 1em solid #96c11f;
+    }
+    header img.logo {
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    a {
+      color: #6f440a;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 1.5em;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2, h3, nav a {
+      font-family: "Nocturne Serif";
+      font-weight: 900;
+    }
+    h2 {
+      border-bottom: 2px solid #96c11f;
+      padding-bottom: 0.3em;
+      color: #4a4a4a;
+    }
+    .produit-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(min(calc(450px - 1rem), 100%), 1fr));
+    }
+    .produit-categorie {
+      display: flex;
+      background: #fff;
+      border: 1px solid #96c11f;
+      border-radius: 8px;
+      padding: 1em;
+      align-items: flex-start;
+    }
+    .categorie-img {
+      width: 200px;
+    }
+    .swiper, .produit-categorie > .categorie-img {
+      max-width: 200px;
+      margin: 0 1em 0 0;
+      border-radius: 5px;
+      max-height: 400px;
+    }
+    .swiper {
+      overflow: hidden;
+    }
+    .categorie-info h3 {
+      margin-top: 0;
+    }
+    .categorie-info ul {
+      padding-left: 1em;
+      margin: 0;
+      line-height: 1.5;
+    }
+    ul {
+      line-height: 1.6;
+    }
+    footer {
+      background: #96c11f;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      border-top: 1em solid #f2e6c4;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        display: block;
+        margin: 0.3em 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .swiper, .produit-categorie > .categorie-img {
+        width: 100%;
+        margin: 0 0 1em 0;
+        border-radius: 5px;
+        max-width: unset;
+        max-height: unset;
+      }
+      .categorie-img {
+        width: 100%;
+      }
+      .produit-categorie {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    window.onload = function() {
+      console.log('up')
+      const swiper = new Swiper('.swiper', {
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        }
+      });
+      console.log(swiper)
+    }
+  </script>
+</head>
+<body>
+
+<header>
+      <img class="categorie-img" src="assets/images/logo.png" alt="Logo de la Petite Ferme" />
+
+  <p>Étienne Marteau – Amanlis (35)</p>
+  <nav>
+    <a href="#presentation">Mon parcours</a>
+    <a href="#produits">Produits</a>
+    <a href="#ventes">Où me trouver</a>
+    <a href="#commande">Commander</a>
+    <a href="#tarifs">Tarifs</a>
+    <a href="#contact">Contact</a>
+
+
+  </nav>
+</header>
+
+<section id="presentation">
+  <h2>Mon parcours & mon engagement</h2>
+  <p>
+    Paysan, je suis installé sur la commune d'Amanlis. Après plus de 15 ans sur les toits des monuments historiques,
+    j'ai eu envie de revoir la terre de plus près.
+  </p>
+  <p>
+    Mon engagement m’a poussé à créer ma <strong>Petite Ferme</strong>, riche de diversité et à taille d’autrefois.
+    Je crois en une <strong>paysannerie vertueuse</strong>, respectueuse de la terre, des bêtes et des hommes.
+  </p>
+  <p>
+    Je propose des œufs bio frais, issus d'un petit élevage nomade en plein air.
+    Je propose également du miel ainsi que différents produits issus de mes ruches et confectionnés artisanalement.
+    Quelques moutons entretiennent les prairies, et je propose, à la saison, de la viande d'agneau bio sur commande.
+  </p>
+  <p>
+    Je retrouve la noblesse de la nature dans le sol que je cultive, dans le travail des abeilles, dans le pâturage des moutons.
+  </p>
+</section>
+
+<section id="produits">
+  <h2>Mes produits</h2>
+
+  <div class="produit-grid">
+    <!-- Catégorie 1 : Les œufs de la ferme -->
+    <div class="produit-categorie">
+      <img class="categorie-img" src="assets/images/oeufs.jpg" srcset="assets/images/oeufs-mobile.jpg 400w" alt="Œufs" />
+      <div class="categorie-info">
+        <h3>Les œufs de la ferme</h3>
+        <ul>
+          <li>Oeufs bio, ponte de la semaine des poules élevées en plein air</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Catégorie 2 : Les miels -->
+    <div class="produit-categorie">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/miel.jpg" srcset="assets/images/miel-mobile.jpg 400w" alt="Miel" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/miel-1.jpg" srcset="assets/images/miel-1-mobile.jpg 400w" alt="Miel-1" /></div>
+        </div>
+      </div>
+      <div class="categorie-info">
+        <h3>Les miels</h3>
+        <ul>
+          <li>Miel de printemps</li>
+          <li>Miel d'été</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Catégorie 3 : Les douceurs maison -->
+    <div class="produit-categorie">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/douceurs.jpg" srcset="assets/images/douceurs-mobile.jpg 400w" alt="Nougat" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/douceurs-1.jpg" srcset="assets/images/douceurs-1-mobile.jpg 400w" alt="Caramel des abeilles" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/douceurs-2.jpg" srcset="assets/images/douceurs-2-mobile.jpg 400w" alt="Dessert des écureuils" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/douceurs-3.jpg" srcset="assets/images/douceurs-3-mobile.jpg 400w" alt="Moutarde miel/curry" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/douceurs-4.jpg" srcset="assets/images/douceurs-4-mobile.jpg 400w" alt="Moutarde miel/piment d'espelette" /></div>
+        </div>
+      </div>
+      <div class="categorie-info">
+        <h3>Les douceurs maison</h3>
+        <ul>
+          <li>Nougat</li>
+          <li>Caramel au miel</li>
+          <li>Pâte à tartiner miel-noisettes</li>
+          <li>Moutarde miel-curry</li>
+          <li>Moutarde miel-piment d’Espelette</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Catégorie 4 : Bien-être et artisanat -->
+    <div class="produit-categorie">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre.jpg" srcset="assets/images/bienetre-mobile.jpg 400w" alt="Bougie ronde" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre-1.jpg" srcset="assets/images/bienetre-1-mobile.jpg 400w" alt="Bougie roulée" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre-2.jpg" srcset="assets/images/bienetre-2-mobile.jpg 400w" alt="Bougie origami" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre-3.jpg" srcset="assets/images/bienetre-3-mobile.jpg 400w" alt="Bougie torsade" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre-4.jpg" srcset="assets/images/bienetre-4-mobile.jpg 400w" alt="Bougie nains" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre-5.jpg" srcset="assets/images/bienetre-5-mobile.jpg 400w" alt="Bougie ruche" /></div>
+          <div class="swiper-slide"><img class="categorie-img" src="assets/images/bienetre-6.jpg" srcset="assets/images/bienetre-6-mobile.jpg 400w" alt="Bougie noël" /></div>
+        </div>
+      </div>
+      <div class="categorie-info">
+        <h3>Bien-être et artisanat</h3>
+        <ul>
+          <li>Bougies à la cire d'abeille</li>
+          <li>Coffrets cadeau :
+            Coffret douceur, Coffret gourmet</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Catégorie 5 : Viandes de la ferme -->
+    <div class="produit-categorie">
+      <div class="categorie-info">
+        <h3>Viandes de la ferme (selon saison)</h3>
+        <ul>
+          <li>Poule fermière bio</li>
+          <li>Agneau bio élevé sous la mère</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section id="ventes">
+  <h2>Où me trouver</h2>
+  <ul>
+    <li><strong>Marché de Janzé</strong> – le mercredi matin ( 8h-12h, place des halles, Janzé)</li>
+    <li><strong>Marché de la Chèvrerie d’Amanlis</strong> – le vendredi soir ( 16h30-19h, 4 le pâtis-loyer, Amanlis)</li>
+
+</section>
+
+<section id="commande">
+  <h2>Commander</h2>
+  <ul>
+    <li><strong>Click and collect</strong> – avec cagette.net, à récupérer sur les communes de <a href="https://app.cagette.net/group/18501">Amanlis</a>, <a href="https://app.cagette.net/group/18424">Marcillé-Robert</a> et <a href="https://app.cagette.net/group/17982">Moulins</a></li>
+    <p><li><strong>Par mail</strong> – possibilité de commander jusqu'au dimanche soir pour retrait du panier</p>
+                      <a href="mailto:lapetitefermeamanlis@gmail.com">lapetitefermeamanlis@gmail.com</a></li>
+                      <p>Au marché de <strong>Janzé</strong> (mercredi)</p>
+                      <p>Au marché d'<strong>Acigné</strong> - sur le stand de la chèvrerie d'Amanlis (mercredi)</p>
+                      <p>Au marché de la chèvrerie d'<strong>Amanlis</strong> (vendredi)</p>
+                      <p>Au marché de <strong>Cesson-Sévigné</strong> - sur le stand de la chèvrerie d'Amanlis (samedi)</p>
+
+</section>
+
+<section id="tarifs">
+  <h2>Tarifs</h2>
+ <ul>
+   <a href="tarifslapetiteferme.pdf" tarifs.pdf>Télécharger les tarifs</a>
+
+
+</section>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p><strong>Étienne Marteau</strong><br>
+  La Petite Ferme<br>
+  1 La Vieille Audière<br>
+  35150 Amanlis<br>
+  <strong>Email :</strong> <a href="mailto:lapetitefermeamanlis@gmail.com">lapetitefermeamanlis@gmail.com</a><br>
+
+</section>
+
+<footer>
+  <p>© 2025 La Petite Ferme – Étienne Marteau | Site fait maison 🌻</p>
+</footer>
+
+</body>
+</html>
+
+
+
       font-family: "Poppins", "Arial", sans-serif;
       margin: 0;
       background: #faf9f5;
@@ -305,4 +614,5 @@
 
 </body>
 </html>
+
 
