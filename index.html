@@ -62,6 +62,8 @@
     }
     .categorie-img {
       width: 200px;
+      border-radius: 5px;
+      max-height: inherit;
     }
     .swiper, .produit-categorie > .categorie-img {
       max-width: 200px;
@@ -69,6 +71,7 @@
       border-radius: 5px;
       max-height: 400px;
     }
+
     .swiper {
       overflow: hidden;
     }
@@ -174,9 +177,9 @@
     <!-- Catégorie 1 : Les œufs de la ferme -->
     <div class="produit-categorie">
       <picture class="categorie-img">
-        <source media="(min-width:500px)"/ srcset="assets/images/oeufs.jpg ">
-        <source media="(max-width:500px)" /srcset="assets/images/oeufs-mobile.jpg" >
-        <img  class="categorie-img" src="assets/images/oeufs.jp" alt="Œufs" />
+        <source media="(min-width:500px)" srcset="assets/images/oeufs.jpg" />
+        <source media="(max-width:500px)" srcset="assets/images/oeufs-mobile.jpg" />
+        <img class="categorie-img" src="assets/images/oeufs.jpg" alt="Œufs" />
       </picture>
       <div class="categorie-info">
         <h3>Les œufs de la ferme</h3>
@@ -190,12 +193,12 @@
     <div class="produit-categorie">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/miel.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/miel-mobile.jpg" />
             <img class="categorie-img" src="assets/images/miel.jpg" alt="Miel" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/miel-1.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/miel-1-mobile.jpg" />
             <img class="categorie-img" src="assets/images/miel-1.jpg" alt="Miel-1" />
@@ -215,30 +218,30 @@
     <div class="produit-categorie">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/douceurs.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/douceurs-mobile.jpg" />
             <img class="categorie-img" src="assets/images/douceurs.jpg" alt="Nougat" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/douceurs-1.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/douceurs-1-mobile.jpg" />
-            <img class="categorie-img" src="assets/images/douceurs-1.jpg" alt="Caramel des abei/></div>
+            <img class="categorie-img" src="assets/images/douceurs-1.jpg" alt="Caramel des abeilles" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/douceurs-2.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/douceurs-2-mobile.jpg" />
-            <img class="categorie-img" src="assets/images/douceurs-2.jpg" alt="Dessert des écure/></div>
+            <img class="categorie-img" src="assets/images/douceurs-2.jpg" alt="Dessert des écureuils" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/douceurs-3.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/douceurs-3-mobile.jpg" />
-            <img class="categorie-img" src="assets/images/douceurs-3.jpg" alt="Moutarde miel/cur</div>
+            <img class="categorie-img" src="assets/images/douceurs-3.jpg" alt="Moutarde miel/curry" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/douceurs-4.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/douceurs-4-mobile.jpg" />
-            <img class="categorie-img" src="assets/images/douceurs-4.jpg" alt="Moutarde miel/pd'espelette" /></div>
+            <img class="categorie-img" src="assets/images/douceurs-4.jpg" alt="Moutarde miel/piment d'espelette" />
           </picture>
         </div>
       </div>
@@ -258,37 +261,37 @@
     <div class="produit-categorie">
       <div class="swiper">
         <div class="swiper-wrapper">
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre.jpg" alt="Bougie ronde" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre-1.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-1-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre-1.jpg" alt="Bougie roulée" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre-2.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-2-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre-2.jpg" alt="Bougie origami" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre-3.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-3-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre-3.jpg" alt="Bougie torsade" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre-4.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-4-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre-4.jpg" alt="Bougie nains" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre-5.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-5-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre-5.jpg" alt="Bougie ruche" />
           </picture>
-          <picture class="swiper-slide">>
+          <picture class="swiper-slide">
             <source media="(min-width:500px)" srcset="assets/images/bienetre-6.jpg" />
             <source media="(max-width:500px)" srcset="assets/images/bienetre-6-mobile.jpg" />
             <img class="categorie-img" src="assets/images/bienetre-6.jpg" alt="Bougie noël" />
